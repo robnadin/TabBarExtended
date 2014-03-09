@@ -22,6 +22,7 @@
 		D4F3261A18CBE09D00A7A5CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F325F918CBE09D00A7A5CD /* UIKit.framework */; };
 		D4F3262218CBE09D00A7A5CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4F3262018CBE09D00A7A5CD /* InfoPlist.strings */; };
 		D4F3262418CBE09D00A7A5CD /* TabBarExtendedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F3262318CBE09D00A7A5CD /* TabBarExtendedTests.m */; };
+		D4F3262F18CBE0BA00A7A5CD /* ExtendedTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F3262E18CBE0BA00A7A5CD /* ExtendedTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		D4F3261F18CBE09D00A7A5CD /* TabBarExtendedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBarExtendedTests-Info.plist"; sourceTree = "<group>"; };
 		D4F3262118CBE09D00A7A5CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4F3262318CBE09D00A7A5CD /* TabBarExtendedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarExtendedTests.m; sourceTree = "<group>"; };
+		D4F3262D18CBE0BA00A7A5CD /* ExtendedTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedTabBarController.h; sourceTree = "<group>"; };
+		D4F3262E18CBE0BA00A7A5CD /* ExtendedTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				D4F3260418CBE09D00A7A5CD /* AppDelegate.h */,
 				D4F3260518CBE09D00A7A5CD /* AppDelegate.m */,
 				D4F3260718CBE09D00A7A5CD /* Main.storyboard */,
+				D4F3262D18CBE0BA00A7A5CD /* ExtendedTabBarController.h */,
+				D4F3262E18CBE0BA00A7A5CD /* ExtendedTabBarController.m */,
 				D4F3260A18CBE09D00A7A5CD /* FirstViewController.h */,
 				D4F3260B18CBE09D00A7A5CD /* FirstViewController.m */,
 				D4F3260D18CBE09D00A7A5CD /* SecondViewController.h */,
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F3262F18CBE0BA00A7A5CD /* ExtendedTabBarController.m in Sources */,
 				D4F3260F18CBE09D00A7A5CD /* SecondViewController.m in Sources */,
 				D4F3260618CBE09D00A7A5CD /* AppDelegate.m in Sources */,
 				D4F3260C18CBE09D00A7A5CD /* FirstViewController.m in Sources */,
