@@ -264,22 +264,110 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weB-YD-wVe" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQb-oN-2Db" userLabel="Marker Detail View">
+                                <rect key="frame" x="0.0" y="461" width="320" height="58"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFG-gl-Hgf">
+                                        <rect key="frame" x="222" y="14" width="78" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Street View">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="RM9-mO-60N" kind="modal" identifier="PanoramaSegue" id="SzX-hW-yxV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="BFG-gl-Hgf" secondAttribute="centerY" id="9s9-nc-OkS"/>
+                                    <constraint firstAttribute="trailing" secondItem="BFG-gl-Hgf" secondAttribute="trailing" constant="20" id="jxh-fS-x61"/>
+                                    <constraint firstAttribute="height" constant="58" id="pWq-2f-Tq0"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="oCR-xK-BeZ" firstAttribute="top" secondItem="aQb-oN-2Db" secondAttribute="bottom" id="3oz-UQ-1Xm"/>
                             <constraint firstItem="weB-YD-wVe" firstAttribute="top" secondItem="8zx-lo-VCj" secondAttribute="top" id="BmG-AS-QOJ"/>
+                            <constraint firstAttribute="trailing" secondItem="aQb-oN-2Db" secondAttribute="trailing" id="Nwe-2z-W9W"/>
                             <constraint firstAttribute="bottom" secondItem="weB-YD-wVe" secondAttribute="bottom" id="SHs-8J-fvx"/>
                             <constraint firstItem="weB-YD-wVe" firstAttribute="leading" secondItem="8zx-lo-VCj" secondAttribute="leading" id="bln-MR-PS7"/>
+                            <constraint firstItem="aQb-oN-2Db" firstAttribute="leading" secondItem="8zx-lo-VCj" secondAttribute="leading" id="rmz-N1-u8Z"/>
                             <constraint firstAttribute="trailing" secondItem="weB-YD-wVe" secondAttribute="trailing" id="wuO-xM-cTn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Qg-Pn-dV5"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="weB-YD-wVe" id="9Gb-pU-nV0"/>
+                        <outlet property="markerDetailView" destination="aQb-oN-2Db" id="CeI-tQ-vn3"/>
+                        <outlet property="streetViewButton" destination="BFG-gl-Hgf" id="zXf-HE-Nff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VoD-yJ-wBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1761" y="1161"/>
+        </scene>
+        <!--Street View Controller-->
+        <scene sceneID="lSs-9f-0EV">
+            <objects>
+                <viewController id="D4Y-2R-Zsz" customClass="StreetViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4KI-Xp-WtI"/>
+                        <viewControllerLayoutGuide type="bottom" id="vwU-4F-p4z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CVp-mT-5TJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTx-2f-vpM" customClass="GMSPanoramaView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GTx-2f-vpM" firstAttribute="leading" secondItem="CVp-mT-5TJ" secondAttribute="leading" id="09f-ZJ-S11"/>
+                            <constraint firstItem="GTx-2f-vpM" firstAttribute="top" secondItem="CVp-mT-5TJ" secondAttribute="top" id="1Q8-LG-O1m"/>
+                            <constraint firstAttribute="trailing" secondItem="GTx-2f-vpM" secondAttribute="trailing" id="Ao2-3x-abQ"/>
+                            <constraint firstItem="vwU-4F-p4z" firstAttribute="top" secondItem="GTx-2f-vpM" secondAttribute="bottom" id="siB-Cb-6iE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oah-RP-5Mw">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="1v8-9b-bDv">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="D4Y-2R-Zsz" id="Uh1-Ja-HSD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="panoramaView" destination="GTx-2f-vpM" id="MdI-wm-9KL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiY-dj-a0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2297" y="1915"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rqh-Rt-5Fg">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="RM9-mO-60N" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LUC-1H-Iha">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="D4Y-2R-Zsz" kind="relationship" relationship="rootViewController" id="cJE-17-T1s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdh-Ft-j6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="1915"/>
         </scene>
     </scenes>
     <resources>

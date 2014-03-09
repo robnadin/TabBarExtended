@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5FEFBE99A2E047EEB5E5BAC0 /* libPods-TabBarExtended.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 656BCCAF0D914742AA7A837F /* libPods-TabBarExtended.a */; };
+		D42FFB7518CCEC8E003868E1 /* StreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42FFB7418CCEC8E003868E1 /* StreetViewController.m */; };
 		D44A1D9918CCB66E0008936C /* RNPreloadSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D44A1D9818CCB66E0008936C /* RNPreloadSegue.m */; };
 		D44A1D9D18CCB6A80008936C /* RNPreloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44A1D9C18CCB6A80008936C /* RNPreloadViewController.m */; };
 		D44A1DA018CCBB200008936C /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44A1D9F18CCBB200008936C /* MapsViewController.m */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		4218E9D79FCB445584AE23A2 /* Pods-TabBarExtended.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarExtended.xcconfig"; path = "Pods/Pods-TabBarExtended.xcconfig"; sourceTree = "<group>"; };
 		656BCCAF0D914742AA7A837F /* libPods-TabBarExtended.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TabBarExtended.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42FFB7318CCEC8E003868E1 /* StreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetViewController.h; sourceTree = "<group>"; };
+		D42FFB7418CCEC8E003868E1 /* StreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetViewController.m; sourceTree = "<group>"; };
 		D44A1D9718CCB66E0008936C /* RNPreloadSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPreloadSegue.h; sourceTree = "<group>"; };
 		D44A1D9818CCB66E0008936C /* RNPreloadSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPreloadSegue.m; sourceTree = "<group>"; };
 		D44A1D9B18CCB6A80008936C /* RNPreloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPreloadViewController.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				D44A1D9C18CCB6A80008936C /* RNPreloadViewController.m */,
 				D44A1D9E18CCBB200008936C /* MapsViewController.h */,
 				D44A1D9F18CCBB200008936C /* MapsViewController.m */,
+				D42FFB7318CCEC8E003868E1 /* StreetViewController.h */,
+				D42FFB7418CCEC8E003868E1 /* StreetViewController.m */,
 				D4F3261018CBE09D00A7A5CD /* Images.xcassets */,
 				D4F325FC18CBE09D00A7A5CD /* Supporting Files */,
 			);
@@ -330,6 +335,7 @@
 				D44A1D9918CCB66E0008936C /* RNPreloadSegue.m in Sources */,
 				D4F3260C18CBE09D00A7A5CD /* FirstViewController.m in Sources */,
 				D4F3260218CBE09D00A7A5CD /* main.m in Sources */,
+				D42FFB7518CCEC8E003868E1 /* StreetViewController.m in Sources */,
 				D44A1DA018CCBB200008936C /* MapsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

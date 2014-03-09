@@ -29,6 +29,13 @@
     [super viewDidLoad];
 
 	// Do any additional setup after loading the view.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Perform any additional tasks associated with presenting the view.
     [self performSegueWithIdentifier:@"PreloadMaps" sender:self];
 }
 

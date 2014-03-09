@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface MapsViewController : UIViewController
+
+#pragma mark - Outlets
+
+@property (weak, nonatomic) IBOutlet GMSMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIView *markerDetailView;
+@property (weak, nonatomic) IBOutlet UIButton *streetViewButton;
 
 @end
